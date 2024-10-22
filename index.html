@@ -21,55 +21,60 @@
     <meta property="og:image" content="http://localhost:4000" />
     <meta property="og:description" content="" />
     <title>The 2nd International Conference – 21-22 November 2024</title>
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#2b5797">
     <style> body { margin: 0; padding: 0; animation: burstBg 15s cubic-bezier(0.42, 0, 0.58, 1) infinite; background-image: linear-gradient(0deg, #000000, #363b3f, #2c5945, #000000, #20201d, #35413d, #0d3a27, #21453e, #000000, #2c3f37, #2a2109, #363b3f, #2c5945); background-size: 200% 200%; min-height: 100vh; box-sizing: border-box; } @keyframes burstBg { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } } </style>
     <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/scripts.js" type="text/JavaScript" defer></script>
+    <script src="./js/sources/jquery.appear.min.js" type="text/JavaScript" defer></script>
+    <script src="./js/sources/jquery.countTo.min.js" type="text/JavaScript" defer></script>
+    <script src="./js/sources/jquery.sticky-kit.min.js" type="text/JavaScript" defer></script>
+    <script src="./js/sources/typed.min.js" type="text/JavaScript" defer></script>
+    <script src="./js/sources/waves.min.js" type="text/JavaScript" defer></script>
+    <script src="./js/bootstrap.min.js" type="text/JavaScript" defer></script>
+    <script src="./js/default.js" type="text/JavaScript" defer></script>
+    <script src="./js/jquery-2.1.1.min.js" type="text/JavaScript" defer></script>
+    <script src="./js/scripts.min.js" type="text/JavaScript" defer></script>
 </head>
 <body>
-<div id="preloader" class="preloader">
-    <div class="loader-gplus"></div>
-</div>
+
 <div id="st-container" class="st-container disable-scrolling">
     <div class="st-pusher">
         <div class="st-content">
             <div class="hero-container">
                 <section id="top-section-hero" class="top-section-hero" style="height: 100vh;">
                     <video autoplay muted loop playsinline class="hero-video">
-                        <source src="your-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag. <img src="fallback-image.jpg" alt="Fallback Image">
+                        <source src="assets/your-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag. <img src="assets/fallback-image.jpg" alt="Fallback Image">
                     </video>
                     <div class="video-overlay"></div>
                     <header id="top-header" class="top-header">
                         <svg id="menu-trigger" class="menu-trigger icon icon-menu visible-xs" viewBox="0 0 32 32">
                             <use xlink:href="/z#logo.png"></use>
                         </svg>
-                        <a href="index.html" id="logo-header" class="logo-header"> <img src="logo.png" width="100px" height="400px" alt="Logo" class="logo"> </a>
+                        <a href="index.html" id="logo-header" class="logo-header"> <img src="assets/logo.png" width="100px" height="400px" alt="Logo" class="logo"> </a>
                         <nav class="st-menu st-effect" id="menu">
                             <ul>
                                 <li class="nav-item dropdown" style="position: relative; color: white"> <a class="nav-link current" href="index.html"> Home </a> </li>
                                 <li class="nav-item dropdown" style="position: relative;">
-                                    <a href="guidelines.html" class="nav-link dropdown-toggle" id="author-guidelines Dropdown" role="button"> Author Guidelines </a>
-                                    <div class="dropdown-menu" aria-labelledby="author-guidelinesDropdown" style="display: none; position: absolute; left: 0; background-color: #439ea2; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; opacity: 0; transition: opacity 0.5s ease, transform 0.3s ease; transform: translateY(-10px);"> <a class="dropdown-item" href="submit-paper.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Call For Papers </a> <a class="dropdown-item" href="guidelines.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Abstract Submission Guidelines </a> </div>
+                                    <a href="#" class="nav-link dropdown-toggle" id="author-guidelines Dropdown" role="button"> Author Guidelines </a>
+                                    <div class="dropdown-menu" aria-labelledby="author-guidelinesDropdown" style="display: none; position: absolute; left: 0; background-color: #439ea2; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; opacity: 0; transition: opacity 0.5s ease, transform 0.3s ease; transform: translateY(-10px);"> <a class="dropdown-item" href="pages/submit-paper.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Call For Papers </a> <a class="dropdown-item" href="pages/guidelines.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Abstract Submission Guidelines </a> </div>
                                 </li>
                                 <li class="nav-item dropdown" style="position: relative;">
                                     <a href="#" class="nav-link dropdown-toggle" id="information Dropdown" role="button"> Information </a>
                                     <div class="dropdown-menu" aria-labelledby="informationDropdown" style="display: none; position: absolute; left: 0; background-color: #439ea2; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; opacity: 0; transition: opacity 0.5s ease, transform 0.3s ease; transform: translateY(-10px);"> <a class="dropdown-item" href="index.html#about" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> About Conference </a> <a class="dropdown-item" href="index.html#about-vit" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> About Organizers </a> <a class="dropdown-item" href="index.html#important-deadlines" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Important Deadlines </a> </div>
                                 </li>
-                                <li class="nav-item dropdown" style="position: relative;"> <a class="nav-link " href="speakers.html"> Speakers </a> </li>
+                                <li class="nav-item dropdown" style="position: relative;"> <a class="nav-link " href="pages/speakers.html"> Speakers </a> </li>
                                 <li class="nav-item dropdown" style="position: relative;">
-                                    <a href="team.html" class="nav-link dropdown-toggle" id="committee Dropdown" role="button"> Committee </a>
-                                    <div class="dropdown-menu" aria-labelledby="committeeDropdown" style="display: none; position: absolute; left: 0; background-color: #439ea2; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; opacity: 0; transition: opacity 0.5s ease, transform 0.3s ease; transform: translateY(-10px);"> <a class="dropdown-item" href="team.html#patrons" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Patrons </a> <a class="dropdown-item" href="team.html#co-patrons" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Co-patrons </a> <a class="dropdown-item" href="team.html#organizing" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Organizing Committee </a> <a class="dropdown-item" href="team.html#advisory" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Advisory Committee </a> <a class="dropdown-item" href="team.html#designed-by" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Designed By </a> </div>
+                                    <a href="pages/team.html" class="nav-link dropdown-toggle" id="committee Dropdown" role="button"> Committee </a>
+                                    <div class="dropdown-menu" aria-labelledby="committeeDropdown" style="display: none; position: absolute; left: 0; background-color: #439ea2; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; opacity: 0; transition: opacity 0.5s ease, transform 0.3s ease; transform: translateY(-10px);"> <a class="dropdown-item" href="pages/team.html#patrons" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Patrons </a> <a class="dropdown-item" href="pages/team.html#co-patrons" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Co-patrons </a> <a class="dropdown-item" href="pages/team.html#organizing" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Organizing Committee </a> <a class="dropdown-item" href="pages/team.html#advisory" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Advisory Committee </a> <a class="dropdown-item" href="pages/team.html#designed-by" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Designed By </a> </div>
                                 </li>
                             </ul>
                             <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
                                 <li> <a href="" target="_blank">Register Now</a> </li>
                             </ul>
                         </nav>
-                        <a href="/" id="logo-header" class="logo-header"> <img src="logo2.png" width="100px" height="400px" alt="Logo" class="logo"> </a> <a href="/" id="logo-header" class="logo-header" style="right:20px; position:absolute; top:0px; "> <img src="logo3.png" alt="Logo" class="logo" style="margin:auto; top:0px; position:absolute; right:20px;"> </a>
+                        <a href="/" id="logo-header" class="logo-header"> <img src="assets/logo2.png" width="100px" height="400px" alt="Logo" class="logo"> </a> <a href="/" id="logo-header" class="logo-header" style="right:20px; position:absolute; top:0px; "> <img src="assets/logo3.png" alt="Logo" class="logo" style="margin:auto; top:0px; position:absolute; right:20px;"> </a>
                     </header>
                     <script> document.addEventListener('DOMContentLoaded', function() { document.querySelectorAll('.dropdown').forEach(function(dropdown) { const dropdownLink = dropdown.querySelector('.dropdown-toggle'); const dropdownMenu = dropdown.querySelector('.dropdown-menu'); if (dropdownLink && dropdownMenu) { dropdownLink.addEventListener('mouseover', function() { dropdownMenu.style.display = 'block'; requestAnimationFrame(() => { dropdownMenu.style.opacity = '1'; dropdownMenu.style.transform = 'translateY(0)'; }); }); dropdown.addEventListener('mouseleave', function() { dropdownMenu.style.opacity = '0'; dropdownMenu.style.transform = 'translateY(-10px)'; dropdownMenu.addEventListener('transitionend', function() { if (dropdownMenu.style.opacity === '0') { dropdownMenu.style.display = 'none'; } }, { once: true }); }); } }); }); </script>
                     <style>/* Style for the active/current link */ /* Style for the active/current link */ .nav-link.current { color: white; /* Set the active "Home" link color to grey */ } /* General style for navigation links */ .nav-link { color: white; /* Non-active link color */ text-decoration: none; padding: 10px; display: inline-block; } /* Hover effect to change link color to white */ .nav-link:hover { color: grey; } /* Dropdown menu links */ .dropdown-menu a { color: white; /* Set dropdown link color */ } .dropdown-menu a:hover { background-color: #0056b3; /* Hover effect for dropdown links */ color: white; /* Change dropdown link color on hover */ } /* Style for submenu items */ .dropdown-menu { background-color: #439ea2; /* Background for dropdown */ } /* Animation for dropdown */ .dropdown-menu { transition: opacity 0.5s ease, transform 0.3s ease; } /* Style for hover and active states */ .nav-link:hover, .nav-link.current:hover { color: grey; /* Ensures hover state color is white */ } </style>
@@ -102,7 +107,7 @@
                                 <div class="highlight-box">HYBRID MODE | 21-22 November 2024</div>
                             </div>
                             <!-- Buttons -->
-                            <div class="fade-in-text" style="padding:10px;"> <a href="/#tickets" class="btn btn-primary waves-effect waves-button waves-light waves-float" >Register Now</a> </div>
+                            <div class="fade-in-text" style="padding:10px;"> <a href="#tickets" class="btn btn-primary waves-effect waves-button waves-light waves-float" >Register Now</a> </div>
                         </div>
                     </div>
                     <!-- Scroll Down Indicator -->
@@ -114,7 +119,7 @@
                 </section>
             </div>
             <!-- Style Section -->
-            <style> .hero-container { position: relative; height: 100vh; overflow: hidden; } .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; } .video-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); /* Overlay effect */ z-index: 0; } .content-wrapper, .jumbotron { position: relative; z-index: 1; text-align: center; color: black; /* Ensure text remains visible */ } /* Text styles */ .highlighted-text { font-family: Georgia, serif; font-size: 80px; color: #ff6347; /* Tomato color */ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); } .conference-title { font-family: 'Times New Roman', serif; font-size: 60px; color: #00bfff; /* Deep sky blue */ text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); } .subheading { font-family: 'Arial', sans-serif; font-size: 40px; color: #ffd700; /* Gold */ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); } .collaboration-info { font-family: cursive; font-size: 20px; color: #32cd32; /* Lime green */ } .event-date { font-family: 'Comic Sans MS', sans-serif; color: #ffffff; /* White */ } .highlight-box { font-weight: bold; font-family: ui-monospace; border: 2px solid white; padding: 10px; background-color: orange; width: 400px; text-align: center; font-size: 20px; margin: 0 auto; border-radius: 8px; } /* Button styles */ .btn { margin-top: 15px; } /* Fade-In Animation */ @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } } /* Slide-In Animation */ @keyframes slideIn { 0% { opacity: 0; transform: translateX(-50px); } 100% { opacity: 1; transform: translateX(0); } } /* Bounce-In Animation */ @keyframes bounceIn { 0% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1.1); } 100% { transform: scale(1); } } /* Apply Animations */ .fade-in-text { opacity: 0; animation: fadeIn 1.5s ease-in-out forwards; } .slide-in-text { opacity: 0; animation: slideIn 1.5s ease-in-out forwards; } .bounce-in-text { opacity: 0; animation: bounceIn 1.5s ease-in-out forwards; } /* Staggering effect for animations */ .fade-in-text:nth-child(1) { animation-delay: 0.5s; } .fade-in-text:nth-child(2) { animation-delay: 1s; } .fade-in-text:nth-child(3) { animation-delay: 1.5s; } .slide-in-text:nth-child(1) { animation-delay: 2s; } .bounce-in-text:nth-child(1) { animation-delay: 2.5s; } /* Scroll Down Indicator */ .explore { position: relative; z-index: 1; margin-top: 20px; } .btn { margin-top: 15px; } </style>
+            <style> .hero-container { position: relative; height: 100vh; overflow: hidden; } .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; } .video-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); /* Overlay effect */ z-index: 0; } .content-wrapper, .jumbotron { position: relative; z-index: 1; text-align: center; color: black; /* Ensure text remains visible */ } /* Text styles */ .highlighted-text { font-family: Georgia, serif; font-size: 500%; color: #ff6347; /* Tomato color */ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); } .conference-title { font-family: 'Times New Roman', serif; font-size: 400%; color: #00bfff; /* Deep sky blue */ text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); } .subheading { font-family: 'Arial', sans-serif; font-size: 40px; color: #ffd700; /* Gold */ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); } .collaboration-info { font-family: cursive; font-size: 20px; color: #32cd32; /* Lime green */ } .event-date { font-family: 'Comic Sans MS', sans-serif; color: #ffffff; /* White */ } .highlight-box { font-weight: bold; font-family: ui-monospace; border: 2px solid white; padding: 10px; background-color: orange; width: 400px; text-align: center; font-size: 20px; margin: 0 auto; border-radius: 8px; } /* Button styles */ .btn { margin-top: 15px; } /* Fade-In Animation */ @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } } /* Slide-In Animation */ @keyframes slideIn { 0% { opacity: 0; transform: translateX(-50px); } 100% { opacity: 1; transform: translateX(0); } } /* Bounce-In Animation */ @keyframes bounceIn { 0% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1.1); } 100% { transform: scale(1); } } /* Apply Animations */ .fade-in-text { opacity: 0; animation: fadeIn 1.5s ease-in-out forwards; } .slide-in-text { opacity: 0; animation: slideIn 1.5s ease-in-out forwards; } .bounce-in-text { opacity: 0; animation: bounceIn 1.5s ease-in-out forwards; } /* Staggering effect for animations */ .fade-in-text:nth-child(1) { animation-delay: 0.5s; } .fade-in-text:nth-child(2) { animation-delay: 1s; } .fade-in-text:nth-child(3) { animation-delay: 1.5s; } .slide-in-text:nth-child(1) { animation-delay: 2s; } .bounce-in-text:nth-child(1) { animation-delay: 2.5s; } /* Scroll Down Indicator */ .explore { position: relative; z-index: 1; margin-top: 20px; } .btn { margin-top: 15px; } </style>
             <!-- About Section -->
             <div class="animated-gradient">
                 <section id="about" class="about">
@@ -189,7 +194,7 @@
                         <div class="row text-center logos-section">
                             <div class="col-md-4 col-sm-4 logo-item">
                                 <div class="counter animated hiding" data-animation="fadeInDown" data-delay="0">
-                                    <img src="planning (1).png" alt="Logo 1" class="img-responsive center-block" style=" max-width: 30%; height: auto; border-radius: 20%; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.2)';">
+                                    <img src="./assets/planning%20(1).png" alt="Logo 1" class="img-responsive center-block" style=" max-width: 30%; height: auto; border-radius: 20%; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.2)';">
                                     <h5 style="color: #36b9ea;">Abstract Submission</h5>
                                     <!-- New color -->
                                     <h6 style="color: #FFFFFF;">28 September, 2024</h6>
@@ -198,7 +203,7 @@
                             </div>
                             <div class="col-md-4 col-sm-4 logo-item">
                                 <div class="counter animated hiding" data-animation="fadeInDown" data-delay="500">
-                                    <img src="notification-bell (1).png" alt="Logo 2" class="img-responsive center-block" style=" max-width: 30%; height: auto; border-radius: 20%; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.2)';">
+                                    <img src="./assets/notification-bell%20(1).png" alt="Logo 2" class="img-responsive center-block" style=" max-width: 30%; height: auto; border-radius: 20%; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.2)';">
                                     <h5 style="color: #36b9ea;">Notification of Abstract Acceptance</h5>
                                     <!-- New color -->
                                     <h6 style="color: #FFFFFF;">05 October, 2024</h6>
@@ -207,7 +212,7 @@
                             </div>
                             <div class="col-md-4 col-sm-4 logo-item">
                                 <div class="counter animated hiding" data-animation="fadeInDown" data-delay="1000">
-                                    <img src="planning.png" alt="Logo 3" class="img-responsive center-block" style=" max-width: 30%; height: auto; border-radius: 20%; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.2)';">
+                                    <img src="assets/planning.png" alt="Logo 3" class="img-responsive center-block" style=" max-width: 30%; height: auto; border-radius: 20%; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; " onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.2)';">
                                     <h5 style="color: #36b9ea;">Full Length Paper Submission</h5>
                                     <!-- New color -->
                                     <h6 style="color: #FFFFFF;">05 November, 2024</h6>
@@ -294,7 +299,7 @@
                             <!-- Registration Link with QR Code -->
                             <div class="registration-link" style="margin-top: 20px; text-align: center;">
                                 <h3 style="font-weight:bold;">Link to Register</h3>
-                                <!-- Blue Button for Registration Link --> <a href="https://forms.gle/fXp7sLAAL59BSw788" target="_blank" class="register-button"> Register Now </a> <!-- Registration Link for reference --> <!-- QR Code --> <img src="qr.png" alt="QR Code" class="qr-code">
+                                <!-- Blue Button for Registration Link --> <a href="https://forms.gle/fXp7sLAAL59BSw788" target="_blank" class="register-button"> Register Now </a> <!-- Registration Link for reference --> <!-- QR Code --> <img src="assets/qr.png" alt="QR Code" class="qr-code">
                                 <p>Scan to Register</p>
                             </div>
                         </div>
@@ -315,9 +320,9 @@
                     <li class="nav__item">
                         <h2 class="nav__title">Quick Links</h2>
                         <ul class="nav__ul">
-                            <li> <a href="/">> Home</a> </li>
-                            <li> <a href="/blog/">> Call For Paper</a> </li>
-                            <li> <a href="#important-deadlines">> Important Dates</a> </li>
+                            <li> <a href="index.html">> Home</a> </li>
+                            <li> <a href="./pages/submit-paper.html">> Call For Paper</a> </li>
+                            <li> <a href="index.html#important-deadlines">> Important Dates</a> </li>
                         </ul>
                     </li>
                     <li class="nav__item">
