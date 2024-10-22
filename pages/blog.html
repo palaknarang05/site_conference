@@ -34,6 +34,7 @@
     <script src="../js/default.js" type="text/JavaScript" defer></script>
     <script src="../js/jquery-2.1.1.min.js" type="text/JavaScript" defer></script>
     <script src="../js/scripts.min.js" type="text/JavaScript" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <style> /* Apply animated gradient to entire page */ body { margin: 0; padding: 0; animation: burstBg 15s cubic-bezier(0.42, 0, 0.58, 1) infinite; background-image: linear-gradient(0deg, #000000, #363b3f, #2c5945, #000000, #20201d, #35413d, #0d3a27, #21453e, #000000, #2c3f37, #2a2109, #363b3f, #2c5945); background-size: 200% 200%; min-height: 100vh; box-sizing: border-box; } @keyframes burstBg { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } } </style>
     <link href="../main.css" rel="stylesheet">
@@ -54,10 +55,10 @@
                     <nav class="st-menu st-effect" id="menu">
                         <div class="logo-navbar logo logo-dark visible-xs"></div>
                         <ul>
-                            <li class="nav-item dropdown" style="position: relative;"> <a class="nav-link" href="../index.html"> Home </a> </li>
+                            <li class="nav-item dropdown" style="position: relative;"> <a class="nav-link current" href="../index.html"> Home </a> </li>
                             <li class="nav-item dropdown" style="position: relative;">
-                                <a href="#" class="nav-link current" id="author-guidelines Dropdown" role="button"> Author Guidelines </a>
-                                <div class="dropdown-menu" aria-labelledby="author-guidelinesDropdown" style="display: none; position: absolute; left: 0; background-color: #439ea2; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; opacity: 0; transition: opacity 0.5s ease, transform 0.3s ease; transform: translateY(-10px);"> <a class="dropdown-item" href="submit-paper.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Call For Papers </a> <a class="dropdown-item" href="guidelines.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Abstract Submission Guidelines </a> </div>
+                                <a href="#" class="nav-link dropdown-toggle" id="author-guidelines Dropdown" role="button"> Author Guidelines </a>
+                                <div class="dropdown-menu" aria-labelledby="author-guidelinesDropdown" style="display: none; position: absolute; left: 0; background-color: #439ea2; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; opacity: 0; transition: opacity 0.5s ease, transform 0.3s ease; transform: translateY(-10px);"> <a class="dropdown-item" href="blog.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Call For Papers </a> <a class="dropdown-item" href="guidelines.html" style="font-color: black; padding: 8px 16px; text-decoration: none; display: block; border-bottom: 1px solid #0056b3;"> Abstract Submission Guidelines </a> </div>
                             </li>
                             <li class="nav-item dropdown" style="position: relative;">
                                 <a href="#" class="nav-link dropdown-toggle" id="information Dropdown" role="button"> Information </a>
@@ -281,8 +282,8 @@
             <footer class="footer">
                 <div class="footer__addr">
                     <h1 class="footer__logo">ICHBH-2024</h1>
-                    <h2><i class="fa">&#xf041;</i> Address</h2>
-                    <address> VIT BHOPAL Kotri Kalan, Indore Road, Bhopal, Madhya Pradesh<br /> <br /> <i class="fa">&#xf095;</i> Dr. Vinod Bhatt - +91 79744 24484<br> Dr. Dev Brat Gupta - +91 90793 44563 <br /> <br /> <i class="fa">&#xf0e0;</i> ichbh@vitbhopal.ac.in </address>
+                    <h2><i class="fa" style="color:black;">&#xf041;</i> Address</h2>
+                    <address> VIT BHOPAL Kotri Kalan, Indore Road, Bhopal, Madhya Pradesh<br /> <br /> <i class="fa" style="color: black">&#xf095;</i> Dr. Vinod Bhatt - +91 79744 24484<br><i class="fa" style="color: black">&#xf095;</i> Dr. Dev Brat Gupta - +91 90793 44563 <br /> <br /> <i class="fa" style="color: black">&#xf0e0;</i> ichbh@vitbhopal.ac.in </address>
                 </div>
                 <ul class="footer__nav">
                     <li class="nav__item">
